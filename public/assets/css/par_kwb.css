@@ -1,0 +1,71 @@
+<style>
+*{}
+
+body {
+    background-color: #FFD300;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Kalam;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    background-image: url('/public/assets/img/rndm02.jpg');
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.uz_sakumu {
+    font-family: Kalam;
+    position: fixed;
+    text-align: right;
+    top: 8px;
+    right: 16px;
+    padding: 7px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: #ff8533;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.uz_sakumu:hover {
+    background-color: #F15A24;
+    color: aliceblue;
+    transition: .5s;
+    cursor: pointer;
+    transition: -1s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.picture {
+    padding: 35px;
+}
+
+.pic {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    opacity: 0.87;
+    border-radius: 30px;
+}
+
+.pic:hover {
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(1.03);
+    
+}
+</style>

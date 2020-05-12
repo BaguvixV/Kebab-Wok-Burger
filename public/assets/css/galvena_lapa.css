@@ -1,0 +1,199 @@
+<style>
+*{}
+
+body {
+    font-family: Montserrat-Regular, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    background-image: url('../img/HP1.jpg');
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-bar {
+    position: absolute;
+    text-align: right;
+    top: 8px;
+    right: 16px;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: inherit;
+    background-color: inherit;
+    white-space: nowrap;
+}
+
+.button {
+    font-family: Kalam;
+    position: static;
+    text-align: right;
+    top: 8px;
+    right: 16px;
+    padding: 6px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: #ff8533;
+    font-size: 18px;
+}
+
+.button:hover {
+    transition: -1s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn-space {
+    padding-top: 15px;
+}
+
+.txt-space {
+    line-height: 24px;
+}
+
+.main-txt {
+    font-family: Kalam;
+    position: absolute;
+    bottom: 10px;
+    right: 35px;
+    text-align: right;
+    font-size: 20px;
+    cursor: default;
+    padding-top: 50px;
+}
+
+.freepik {
+    font-family: Kalam;
+    position: absolute;
+    cursor: pointer;
+    font-size: 15px;
+    left: 20px;
+    bottom: 15px;
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.freepik:hover {
+    color: blue;
+    transition: -1s;
+    transform: scale(1.02);
+}
+
+#btn_allProduct, #btn_kontakti, #btn_atsauksmes, #btn_parKWB {
+    display: none;
+    top: 15%;
+    width: 70%;
+    left: 15%;
+    text-align: center;
+    background: #efefef;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 14pt;
+    font-family: Montserrat-Regular;
+}
+
+.side-nav{
+    background-color: #6b6e69;
+    font-family: Kalam;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.97;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.side-nav a{
+    padding: 20px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F15A24;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover{
+    color:#fff;
+}
+
+.side-nav .btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 70px;
+    color: red;
+}
+
+#btn_hide {
+    text-align: center;
+    margin: 5px;
+    padding: 1em;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    font-family: Montserrat-Regular;
+}
+
+input[type=text], select, textarea {
+    display: absolute;
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    resize: vertical;
+    font-size: 14pt;
+    font-family: Montserrat-Regular;
+}
+
+input[type=textarea], {
+    text-align: right;
+}
+
+lable {
+    position: absolute;
+    font-family: Montserrat-Regular;
+    text-align: right;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background: #ff8533;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ED6030, #EC4E57);
+}
+
+::-webkit-scrollbar-track-piece {
+    background: grey;
+}
+</style>

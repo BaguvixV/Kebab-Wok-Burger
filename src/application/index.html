@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="../assets/img/icons8-french-fries-48.png">
+    <title>Kebab Wok Burger</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="public/assets/css/galvena_lapa.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <script type="text/javascript" src="#"></script> -->
+    <a href="https://www.freepik.com/free-photos-vectors/background" class="freepik">Background photo created by freepik - www.freepik.com</a>
+<!--===============================================================================================-->
+                                            <!-- MENU BUTTONS --> 
+<!--===============================================================================================-->
+    <div class="background">
+        <div class="menu-bar">
+            <div class="btn-space"><button class="button">Akcijas!</button></div>
+            <div class="btn-space" onClick="location.href='alergeni'"><button class="button">Alergēni</button></div>
+            <nav class="">
+              <a href="#" onclick="openSlideMenu()">
+                <div class="btn-space"><button class="button">Produktu izvēlne</button></div>
+              </a>
+            </nav>
+          <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="/prod_liste_picas">Picas</a>
+            <a href="/prod_liste_burgeri">Burgeri</a>
+            <a href="/prod_liste_kebabi">Kebabi</a>
+            <a href="/prod_liste_wok">WOK</a>
+            <a href="/prod_liste_susi">Suši</a>
+            <a href="/prod_liste_k-susi">Karstie suši</a>
+            <a href="/prod_liste_susi-seti">Suši seti</a>
+		  	<a href="/prod_liste_citi-edieni">Citi ēdieni</a>
+            <a href="/prod_liste_uzkodas">Uzkodas</a>
+          </div>
+          <script>
+            function openSlideMenu(){
+              document.getElementById('side-menu').style.width = '100%';
+            }
+            function closeSlideMenu(){
+              document.getElementById('side-menu').style.width = '0%';
+            }
+          </script>
+            <div class="btn-space" onClick="location.href='piegage'"><button class="button">Iespējamās piegādes</button></div>
+            <!-- <div class="btn-space" onClick="location.href='atsauksmes.html'"><button class="button">Atsauksmes</button></div> -->
+            <div class="btn-space" onClick="location.href='vai_ir_jautajumi'"><button class="button">Ir jautājumi?</button></div>
+            <div class="btn-space" onClick="location.href='par_kwb'"><button class="button">Par KWB</button></div>
+            
+       </div>
+<!--===============================================================================================-->
+                                            <!-- LEFT BOTTOM TEXT --> 
+<!--===============================================================================================--> 
+        <div class="main-txt">
+            <p class="txt-space">Tel. +371 22444455</p>
+            <p class="txt-space">Darba laiks 11:00 - 21:00</p>
+            <p class="txt-space">Pasūtījumus var izņemt: Kļavu ielā 9, Aizkrauklē</p>
+            <!--<p class="txt-space">Piegāde Aizkraukles robežās € 2,00 , pirkumiem virs € 30,00 bez maksas</p>-->
+            <p class="txt-space">Informāciju par piegādēm un to izcenojumiem var apskatīt sadaļā "Iespējamās piegādes"</p>
+        </div>
+    </div>  
+</body>
+</html>
