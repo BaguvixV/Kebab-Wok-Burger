@@ -1,26 +1,22 @@
 <?php
-// Database host ...
-$PDO_HOST 		= "localhost";
-// ... username
-$PDO_USERNAME 	= "root";
-// ... password
-$PDO_PASSWORD 	= "";
-// ... name
-$PDO_DB 		= "kwb";
+    // turn on/off error reporting
+    error_reporting( E_ALL & ~E_DEPRECATED & ~E_NOTICE );
 
-//define('EMAIL', 'darksun412@gmail.com');
-//define('PASS', '');
+    // site url
+    define('SITE_URL', 'http://127.0.0.1');
 
-define('DS',DIRECTORY_SEPARATOR);
+    // database related constants
+    define('DB_DRIVER', 'mysql');           // Database driver ...
+    /*define('DB_SERVER', 'localhost');     // ... host name */
+    define('DB_SERVER_USERNAME', 'root');   // ... username
+    define('DB_SERVER_PASSWORD', '');       // ... password
+    define('DB_DATABASE', 'kwb');           // ... name
+    
+    define('DB_SERVER', '127.0.0.1');       // I changed from `localhost` to `127.0.0.1` because it made less response time on my web-page 
 
-define('APPLICATION_PATH', dirname($_SERVER['DOCUMENT_ROOT']).DS.'src');
 
-//define('__ROOT__', dirname(dirname(__FILE__)));
-
-#define('PDO_HOST','localhost');
-
-#define('PDO_USERNAME','root');
-
-#define('PDO_PASSWORD','');
-
-#define('PDO_DB','kwb');
+    define('DS',DIRECTORY_SEPARATOR);
+    
+    define('__ROOT__', dirname(dirname(__FILE__)));
+    
+    define('APPLICATION_PATH', dirname($_SERVER['DOCUMENT_ROOT']).DS.'src');

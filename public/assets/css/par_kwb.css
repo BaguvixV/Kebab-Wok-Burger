@@ -1,71 +1,104 @@
-<style>
-*{}
-
-body {
-    background-color: #FFD300;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: Kalam;
-    margin: 0;
-    padding: 0;
+* {
+   padding: 0;
+   margin: 0;
 }
 
-body, html {
-    height: 100%;
-    width: 100%;
+body {
+   background-color: #ffd300;
+   font-size: 20px;
+   font-weight: 400;
+   font-family: Kalam;
+   margin: 0;
+   padding: 0;
+}
+
+body,
+html {
+   height: 100%;
+   width: 100%;
 }
 
 .background {
-    background-image: url('/public/assets/img/rndm02.jpg');
-    min-height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+   background-image: url('/public/assets/img/background/optim_par-kwb.jpg');
+   min-height: 100%;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
 }
 
 .uz_sakumu {
-    font-family: Kalam;
-    position: fixed;
-    text-align: right;
-    top: 8px;
-    right: 16px;
-    padding: 7px 15px;
-    border: none;
-    cursor: pointer;
-    background-color: black;
-    color: #ff8533;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: 10px;
+   font-family: Kalam;
+   position: fixed;
+   text-align: right;
+   top: 8px;
+   right: 16px;
+   padding: 7px 15px;
+   border: none;
+   cursor: pointer;
+   background-color: black;
+   color: #ff8533;
+   font-size: 15px;
+   margin-left: 20px;
+   margin-top: 10px;
+   z-index: 1;
 }
 
 .uz_sakumu:hover {
-    background-color: #F15A24;
-    color: aliceblue;
-    transition: .5s;
-    cursor: pointer;
-    transition: -1s;
-    transform: scale(1.1);
-    cursor: pointer;
+   background-color: #f15a24;
+   color: aliceblue;
+   transition: 0.5s;
+   cursor: pointer;
+   transition: -1s;
+   transform: scale(1.1);
+   cursor: pointer;
 }
 
 .picture {
-    padding: 35px;
+   padding-top: 40px;
 }
 
 .pic {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    opacity: 0.87;
-    border-radius: 30px;
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   height: auto;
+   opacity: .95;
+   border-radius: 15px;
 }
 
-.pic:hover {
-    opacity: 1;
-    transition: 0.3s;
-    transform: scale(1.03);
-    
-}
-</style>
+ 
+ .fadeInDown {
+   -webkit-animation-name: fadeInDown;
+   animation-name: fadeInDown;
+   -webkit-animation-duration: 1.5s;
+   animation-duration: 1.5s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeInDown {
+   0% {
+     opacity: 0;
+     -webkit-transform: translate3d(0, -100%, 0);
+     transform: translate3d(0, -100%, 0);
+   }
+   100% {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+ }
+ 
+ @keyframes fadeInDown {
+   0% {
+     opacity: 0;
+     -webkit-transform: translate3d(0, -100%, 0);
+     transform: translate3d(0, -100%, 0);
+   }
+   100% {
+     opacity: 1;
+     -webkit-transform: none;
+     transform: none;
+   }
+ }

@@ -1,0 +1,469 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+body,
+html {
+   background-image: url('/public/assets/img/background/optim_produkti.jpg');
+   font-family: Kalam;
+   background-color: rgb(252, 210, 0);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+}
+
+h1 {
+   font-size: 20px;
+   line-height: 5px;
+   padding-bottom: 10px;
+}
+
+h2 {
+   text-align: center;
+}
+
+li {
+   list-style-type: none;
+}
+
+.button-nav {
+   font-family: Kalam;
+   position: inherit;
+   text-align: right;
+   top: 8px;
+   right: 16px;
+   padding: 7px 15px;
+   border: none;
+   cursor: pointer;
+   background-color: black;
+   color: #ff8533;
+   font-size: 15px;
+   margin-left: 20px;
+   margin-top: 5px;
+}
+
+.button-nav:hover {
+   background-color: #f15a24;
+   color: aliceblue;
+   transition: 0.5s;
+   cursor: pointer;
+   transition: -1s;
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+button {
+   margin-top: 5px;
+   margin-bottom: 10px;
+   background-color: #f15a24;
+   color: black;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+button:hover {
+   background-color: #8f2701;
+   color: black;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.button02,
+.btn-remove {
+   color: black;
+   background-color: rgb(219, 100, 45);
+   border-radius: 0.3em;
+}
+
+.button02:hover,
+.btn-remove:hover {
+   transition: -1s;
+   transform: scale(1.1);
+   cursor: pointer;
+   background-color: rgb(236, 75, 0);
+}
+
+main {
+   max-width: 60%;
+   margin: 0 auto;
+   padding-top: 25px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   text-align: center;
+}
+
+nav {
+   background-size: cover;
+   text-align: right;
+   width: -webkit-fill-available;
+   position: absolute;
+}
+
+nav li {
+   padding: 0 10px;
+}
+
+.product-list .product-title {
+   font-weight: bold;
+}
+
+.product-list .product-sastavdalas {
+   display: none;
+}
+
+.product-card {
+   width: 200px;
+   line-height: 18px;
+   box-shadow: 3px 3px 20px black;
+   border-radius: 5px;
+   margin: 15px;
+   padding: 7px;
+   color: #ffd300;
+   background: black;
+   opacity: 0.8;
+   font-family: Kalam;
+   text-align: center;
+}
+
+.product-card:hover {
+   opacity: 1;
+   transform: scale(1.1);
+}
+
+.product-card-title {
+   display: block;
+   width: 100%;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+.image img {
+   width: 100%;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+}
+
+.sastavdalas {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.22);
+   font-size: 18px;
+}
+
+/* Sastavdalas Content */
+.sastavdalas-content {
+   position: relative;
+   background-color: #79920c;
+   font-family: Kalam;
+   margin: auto;
+   padding: 0;
+   border: 2px solid black;
+   width: 40%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   -webkit-animation-name: animatetop;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animatetop;
+   animation-duration: 0.6s;
+   border-radius: 25px 25px 20px 20px;
+   opacity: 0.93;
+   text-align: center;
+}
+
+.sastavdalas-header {
+   padding: 2px 20px;
+   background-color: #f15a24;
+   color: black;
+   font-style: italic;
+   box-shadow: 20px;
+   border-radius: 23px;
+}
+
+.modal-sastavdalas {
+   padding: 2px 18px;
+   font-size: 20px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+   from {
+      top: -300px;
+      opacity: 0;
+   }
+
+   to {
+      top: 0;
+      opacity: 1;
+   }
+}
+
+@keyframes animatetop {
+   from {
+      top: -300px;
+      opacity: 0;
+   }
+
+   to {
+      top: 0;
+      opacity: 1;
+   }
+}
+
+button.close {
+   margin: 1px;
+   color: #8ba02e;
+   text-shadow: -4px 2px black;
+   border: black;
+   float: right;
+   font-size: 35px;
+   font-weight: bold;
+   font-style: italic;
+   padding: 5px;
+}
+
+button.close:hover,
+button.close:focus {
+   background-color: transparent;
+   color: red;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   cursor: pointer;
+   transform: scale(1.2);
+}
+
+.side-nav {
+   background-color: #6b6e69;
+   font-family: Kalam;
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #111;
+   opacity: 0.97;
+   overflow-x: hidden;
+   padding-top: 60px;
+   transition: 0.5s;
+   text-align: center;
+}
+
+.side-nav a {
+   padding: 20px 10px 10px 30px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #F15A24;
+   display: block;
+   transition: 0.3s;
+}
+
+.side-nav a:hover {
+   color: #fff;
+}
+
+.side-nav .btn-close {
+   position: absolute;
+   top: 0;
+   right: 22px;
+   font-size: 70px;
+   color: red;
+}
+
+#btn_hide {
+   text-align: center;
+   margin: 5px;
+   padding: 1em;
+   color: white;
+   background-color: red;
+   cursor: pointer;
+   font-family: Montserrat-Regular;
+}
+
+.alergeni {
+   color: #8a0000;
+   font-size: 18px;
+}
+
+.product-list .product-card-title {
+   font-weight: bold;
+}
+
+.product-list .product-card-sastavdalas {
+   display: none;
+}
+
+.product-card-price {
+   flex-grow: 1;
+}
+
+aside {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #79920cf5;
+   overflow-x: hidden;
+   transition: 0.5s;
+   opacity: 5;
+}
+
+aside .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+   margin: 1px;
+   color: red;
+   text-shadow: -4px 2px black;
+   border: black;
+   float: right;
+   font-size: 35px;
+   font-weight: bold;
+   font-style: italic;
+   padding: 5px;
+   text-decoration: none;
+}
+
+.aside-section-2 {
+   margin-top: 50px;
+}
+
+.form {
+   box-sizing: border-box;
+   width: 75%;
+   margin: auto;
+   text-align: center;
+   position: inherit;
+   border-radius: 6px;
+   font-size: 18px;
+}
+
+.form-group {
+   content: attr(type);
+   display: block;
+   margin: 15px 0 0;
+}
+
+input {
+   width: 100%;
+   padding: 10px;
+   box-sizing: border-box;
+   background: none;
+   outline: none;
+   resize: none;
+   border: 0;
+   font-family: Kalam;
+   transition: all 0.3s;
+   border-bottom: 2px solid #d0551d;
+   opacity: 1;
+}
+
+.cart-header {
+   font-weight: bold;
+   font-size: 1.25em;
+}
+
+.cart-column {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   margin-right: 1.5em;
+   padding-bottom: 10px;
+   margin-top: 10px;
+}
+
+.cart-row {
+   display: flex;
+}
+
+.cart-item {
+   width: 45%;
+}
+
+.cart-price {
+   width: 20%;
+   font-size: 1.2em;
+}
+
+.cart-quantity {
+   width: 35%;
+}
+
+.cart-item-title {
+   margin-left: 0.5em;
+   font-size: 1.2em;
+}
+
+.cart-item-image {
+   width: 75px;
+   height: auto;
+   border-radius: 10px;
+}
+
+.cart-quantity-input {
+   height: 34px;
+   width: 50px;
+   border-radius: 5px;
+   border: 1px solid black;
+   background-color: #ffffff70;
+   padding: 0;
+   text-align: center;
+   font-size: 1.2em;
+   margin-right: 25px;
+}
+
+.cart-row:last-child {
+   border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+   border: none;
+}
+
+.cart-total {
+   text-align: end;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.cart-total-title {
+   font-weight: bold;
+   font-size: 1.5em;
+   color: black;
+   margin-right: 20px;
+}
+
+.cart-total-price {
+   font-size: 1.1em;
+}
+
+::-webkit-scrollbar {
+   width: 20px;
+   background: #ff8533;
+}
+
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+   background: linear-gradient(#ed6030, #ec4e57);
+}
+
+::-webkit-scrollbar-track-piece {
+   background: grey;
+}

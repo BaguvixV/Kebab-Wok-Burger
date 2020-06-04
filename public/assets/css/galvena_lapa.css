@@ -1,19 +1,17 @@
-<style>
-*{}
-
 body {
     font-family: Montserrat-Regular, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
 }
 
 .background {
-    background-image: url('../img/HP1.jpg');
+    background-image: url('/public/assets/img/background/optim_galvena-lapa.jpg');
     min-height: 100%;
     width: 100%;
     background-position: center;
@@ -27,7 +25,7 @@ body, html {
     right: 16px;
     border: none;
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 12px;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: inherit;
@@ -92,7 +90,10 @@ body, html {
     transform: scale(1.02);
 }
 
-#btn_allProduct, #btn_kontakti, #btn_atsauksmes, #btn_parKWB {
+#btn_allProduct,
+#btn_kontakti,
+#btn_atsauksmes,
+#btn_parKWB {
     display: none;
     top: 15%;
     width: 70%;
@@ -106,7 +107,7 @@ body, html {
     font-family: Montserrat-Regular;
 }
 
-.side-nav{
+.side-nav {
     background-color: #6b6e69;
     font-family: Kalam;
     height: 100%;
@@ -123,7 +124,7 @@ body, html {
     text-align: center;
 }
 
-.side-nav a{
+.side-nav a {
     padding: 20px 10px 10px 30px;
     text-decoration: none;
     font-size: 25px;
@@ -132,11 +133,11 @@ body, html {
     transition: 0.3s;
 }
 
-.side-nav a:hover{
-    color:#fff;
+.side-nav a:hover {
+    color: #fff;
 }
 
-.side-nav .btn-close{
+.side-nav .btn-close {
     position: absolute;
     top: 0;
     right: 22px;
@@ -154,7 +155,9 @@ body, html {
     font-family: Montserrat-Regular;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     display: absolute;
     width: 50%;
     text-align: left;
@@ -169,7 +172,7 @@ input[type=text], select, textarea {
     font-family: Montserrat-Regular;
 }
 
-input[type=textarea], {
+input[type=textarea] {
     text-align: right;
 }
 
@@ -196,4 +199,64 @@ lable {
 ::-webkit-scrollbar-track-piece {
     background: grey;
 }
-</style>
+
+.sideNav2 {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #6b8c00;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 28px;
+    border-radius: 15px 0 0 15px;
+}
+
+.sideNav2 a {
+    margin: 1px;
+    color: red;
+    text-shadow: -4px 2px black;
+    border: black;
+    float: right;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.sideNav2 a:hover {
+    color: #f1f1f1;
+}
+
+.sideNav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav2 {
+        padding-top: 15px;
+    }
+
+    .sideNav2 a {
+        font-size: 18px;
+    }
+}
+
+.product-card {
+    width: 83%;
+    line-height: 25px;
+    box-shadow: 3px 3px 20px #000000bd;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 8px;
+    color: #ffd300;
+    background: black;
+    opacity: 0.85;
+    font-family: Kalam;
+    text-align: center;
+    white-space: normal;
+}

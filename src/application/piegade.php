@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="image/x-icon" href="styles/img/icons8-french-fries-48.png">
+	<link rel="icon" type="image/x-icon" href="/public/assets/img/ikonas/icons8-french-fries-48.png">
 	<title>Piegāde</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="public/assets/css/piegade.css">
@@ -22,7 +22,7 @@
 			</thead>
 			<tbody class="table-hover">
 			<?php
-				include('../src/model/mapper/db.php');
+				include('../src/database/db/database.php');
 
 				//SELECT ALL PIZZA PRODUCTS
 				$stmt = $db_conn->prepare("SELECT * FROM `piegade`");

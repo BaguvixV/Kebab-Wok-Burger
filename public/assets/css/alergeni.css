@@ -1,103 +1,119 @@
-<style>
-*{}
-
 body {
-    font-family: Montserrat-Regular, sans-serif;
-    margin: 0;
-    padding: 0;
+   font-family: Montserrat-Regular, sans-serif;
+   margin: 0;
+   padding: 0;
 }
 
-body, html {
-    background-image: url('../img/rndm05_16-9_2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+body,
+html {
+   background-image: url('/public/assets/img/background/optim_alergeni.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
 }
 
-.alergeni {  
-    box-sizing: border-box;
-    width: 57%;
-    margin-left: 33px;
+.button {
+   font-family: Kalam;
+   position: static;
+   text-align: right;
+   top: 8px;
+   right: 16px;
+   padding: 6px 15px;
+   border: none;
+   cursor: pointer;
+   background-color: black;
+   color: #ff8533;
+   font-size: 18px;
+}
+
+.button:hover {
+   transition: -1s;
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.alergeni {
+   box-sizing: border-box;
+   width: 57%;
+   margin-left: 33px;
 }
 
 .freepik {
-    font-family: Kalam;
-    position: fixed;
-    cursor: pointer;
-    font-size: 14px;
-    right: 20px;
-    bottom: 15px;
-    color: black;
-    text-decoration: none;
-    font-style: italic;
-    background-color: #dcbb10;
-    opacity: 0.9;
-    padding: 3px;
-    border-radius: 70px;
-    text-align: right;
+   font-family: Kalam;
+   position: fixed;
+   cursor: pointer;
+   font-size: 14px;
+   right: 20px;
+   bottom: 15px;
+   color: black;
+   text-decoration: none;
+   font-style: italic;
+   background-color: #dcbb10;
+   opacity: 0.9;
+   padding: 3px;
+   border-radius: 70px;
+   text-align: right;
 }
 
 .freepik:hover {
-    transition: -1s;
-    transform: scale(1.05);
+   transition: -1s;
+   transform: scale(1.05);
 }
 
 .uz_sakumu {
-    font-family: Kalam;
-    position: fixed;
-    text-align: right;
-    top: 8px;
-    right: 16px;
-    padding: 7px 15px;
-    border: none;
-    cursor: pointer;
-    background-color: black;
-    color: #ff8533;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: 10px;
+   font-family: Kalam;
+   position: fixed;
+   text-align: right;
+   top: 8px;
+   right: 16px;
+   padding: 7px 15px;
+   border: none;
+   cursor: pointer;
+   background-color: black;
+   color: #ff8533;
+   font-size: 15px;
+   margin-left: 20px;
+   margin-top: 10px;
 }
 
 .content {
-    font-family: Kalam;
-    font-size: 18px;
+   font-family: Kalam;
+   font-size: 18px;
 }
 
 p {
-    line-height: 24px;
+   line-height: 24px;
 }
 
 .uz_sakumu:hover {
-    background-color: #F15A24;
-    color: aliceblue;
-    transition: .5s;
-    cursor: pointer;
-    transition: -1s;
-    transform: scale(1.1);
-    cursor: pointer;
+   background-color: #f15a24;
+   color: aliceblue;
+   transition: 0.5s;
+   cursor: pointer;
+   transition: -1s;
+   transform: scale(1.1);
+   cursor: pointer;
 }
 
 .alerg-color {
-   color: red; 
+   color: red;
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
-    background: #ff8533;
+   width: 20px;
+   background: #ff8533;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 0;
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#ED6030, #EC4E57);
+   background: linear-gradient(#ed6030, #ec4e57);
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: grey;
+   background: grey;
 }
-</style>
-
