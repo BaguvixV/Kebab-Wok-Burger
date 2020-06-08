@@ -81,7 +81,6 @@ th {
    border-bottom: 4px solid #ffd300;
    border-right: 1px solid #ffd300;
    font-size: 23px;
-   font-weight: 100;
    padding: 24px;
    text-align: left;
    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -170,4 +169,18 @@ td.text-right {
 }
 ::-webkit-scrollbar-track-piece {
    background: grey;
+}
+
+@media screen and (max-width: 1366px) {
+   .table-title h3 {
+   font-size: 28px;
+   }
+
+   td {
+      font-size: 16px;
+   }
+
+   th {
+      font-size: 20px;
+   }
 }

@@ -8,7 +8,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 </head>
 <body>
-	<a href="https://www.freepik.com/free-photos-vectors/background" class="freepik">Background photo created by freepik - www.freepik.com</a>
 	<button onClick="location.href='/'" class="uz_sakumu">Uz sākuma lapu</button>
 		<div class="alergeni">
 			<div class="content">

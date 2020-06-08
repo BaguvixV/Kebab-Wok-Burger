@@ -11,7 +11,7 @@
 
 <body>
    <!-- <script type="text/javascript" src="#"></script> -->
-   <a href="https://www.freepik.com/free-photos-vectors/background" class="freepik">Background photo created by freepik
+   <a href="https://www.freepik.com/free-photos-vectors/background" class="freepik">All background photos on this website is created by freepik
       - www.freepik.com</a>
    <!--===============================================================================================-->
    <!-- MENU BUTTONS -->

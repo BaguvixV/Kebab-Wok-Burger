@@ -74,20 +74,23 @@ html {
 
 .freepik {
     font-family: Kalam;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
-    font-size: 15px;
-    left: 20px;
+    font-size: 14px;
     bottom: 15px;
     color: black;
     text-decoration: none;
     font-style: italic;
+    background-color: #dcbb10;
+    opacity: 0.9;
+    padding: 3px;
+    border-radius: 70px;
+    margin-left: 15px;
 }
 
 .freepik:hover {
-    color: blue;
-    transition: -1s;
-    transform: scale(1.02);
+   transition: -1s;
+   transform: scale(1.05);
 }
 
 #btn_allProduct,
@@ -260,3 +263,20 @@ lable {
     text-align: center;
     white-space: normal;
 }
+
+@media screen and (max-width: 1366px) {
+    .button {
+        font-size: 16px;
+    }
+    .main-txt {
+        font-size: 16.5px;
+    }
+
+    .side-nav {
+        padding-top: 35px;
+    }
+
+    .side-nav a {
+        font-size: 22px;
+    }
+  }

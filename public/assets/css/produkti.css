@@ -467,3 +467,29 @@ input {
 ::-webkit-scrollbar-track-piece {
    background: grey;
 }
+
+@media screen and (max-width: 1366px) {
+   .product-card {
+      width: 190px;
+   }
+
+   .button-nav {
+      font-size: 14px;
+   }
+
+   .sastavdalas-content {
+      width: 48%;
+   }
+
+   .side-nav {
+      padding-top: 35px;
+  }
+
+  .side-nav a {
+      font-size: 22px;
+  }
+
+  .SideNav {
+      width: 10px;
+  }
+ }
